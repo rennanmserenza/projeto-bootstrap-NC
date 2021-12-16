@@ -154,8 +154,22 @@
 }
 
 /* FORMULÁRIO */
+#form-container {
+    margin-bottom: 4em;
+}
 
+.form-group {
+    margin-bottom: 0.5em;
+}
 
+textarea {
+    resize: none;
+    bottom: 0.4em;
+}
+
+#form-btn {
+    font-size: 20px;
+}
 
 /* DESTAQUES */
 #featured-container {

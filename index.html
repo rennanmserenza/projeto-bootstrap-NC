@@ -170,8 +170,42 @@
             </div>
         </div>
 
+        <!-- FOMULÁRIO -->
         <div class="container" id="form-container">
-
+            <div class="col-12">
+                <h2 class="title primary-color">
+                    Trabalhos Conosco
+                </h2>
+                <p class="subtitle secondary-color">
+                    Venha fazer parte do nosso grupo
+                </p>
+            </div>  
+            <form>
+                <div class="form-group">
+                    <label class="subtitle primary-color">Nome completo</label>
+                    <input type="text" class="form-control" id="name-form" placeholder="digite seu nome">
+                </div>
+                <div class="form-group">
+                    <label class="subtitle primary-color">Endereço de email</label>
+                    <input type="email" class="form-control" id="mail-form" placeholder="nome@exemplo.com">
+                </div>
+                <div class="form-group">
+                    <label class="subtitle primary-color">Selecione sua área de experiência</label>
+                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Selecione sua área de atuação">
+                    <datalist id="datalistOptions">
+                        <option value="Arquitetura">
+                        <option value="Criação de projetos 3D">
+                        <option value="Desenvolvimento Web">
+                        <option value="Tecnologia da Informação">
+                        <option value="Vendas">
+                    </datalist>
+                </div>                
+                <div class="form-group">
+                    <label class="subtitle primary-color">Conte-nos um pouco sobre sua experiência</label>
+                    <textarea class="form-control" id="experience" rows="3" placeholder="Conte-nos sobre você de forma breve"></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark" id="form-btn">Enviar</button>
+            </form>
         </div>
 
         <!-- DESTAQUES -->
