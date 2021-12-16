@@ -180,18 +180,21 @@
                     Venha fazer parte do nosso grupo
                 </p>
             </div>  
-            <form>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <input type="hidden" name="accessKey" value="62efc486-8941-445f-bb76-a074b48ca150">
                 <div class="form-group">
                     <label class="subtitle primary-color">Nome completo</label>
-                    <input type="text" class="form-control" id="name-form" placeholder="digite seu nome">
+                    <input type="text" class="form-control" id="name-form" placeholder="digite seu nome" name="name">
                 </div>
                 <div class="form-group">
                     <label class="subtitle primary-color">Endereço de email</label>
-                    <input type="email" class="form-control" id="mail-form" placeholder="nome@exemplo.com">
+                    <input type="email" class="form-control" id="mail-form" placeholder="nome@exemplo.com"
+                    name="email">
                 </div>
                 <div class="form-group">
                     <label class="subtitle primary-color">Selecione sua área de experiência</label>
-                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Selecione sua área de atuação">
+                    <input class="form-control" type="text" list="datalistOptions" id="exampleDataList" placeholder="Selecione sua área de atuação"
+                    name="message">
                     <datalist id="datalistOptions">
                         <option value="Arquitetura">
                         <option value="Criação de projetos 3D">
@@ -202,9 +205,10 @@
                 </div>                
                 <div class="form-group">
                     <label class="subtitle primary-color">Conte-nos um pouco sobre sua experiência</label>
-                    <textarea class="form-control" id="experience" rows="3" placeholder="Conte-nos sobre você de forma breve"></textarea>
+                    <textarea class="form-control" id="experience" rows="3" placeholder="Conte-nos sobre você de forma breve" name="message"></textarea>
                 </div>
-                <button type="submit" class="btn btn-dark" id="form-btn">Enviar</button>
+                <input type="hidden" name="redirectTo" value="https://rennanmserenza.github.io/">
+                <button type="submit" class="btn btn-dark" id="form-btn" name="submit">Enviar</button>
             </form>
         </div>
 
