@@ -186,30 +186,32 @@
             </div>  
             <form action="https://api.staticforms.xyz/submit" method="post">
                 <input type="hidden" name="accessKey" value="62efc486-8941-445f-bb76-a074b48ca150">
-                <div class="form-group">
-                    <label class="subtitle primary-color">Nome completo</label>
-                    <input type="text" class="form-control" id="name-form" placeholder="digite seu nome" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label class="subtitle primary-color">Endereço de email</label>
-                    <input type="email" class="form-control" id="mail-form" placeholder="nome@exemplo.com"
-                    name="email" size="40" required>
-                </div>
-                <div class="form-group">
-                    <label class="subtitle primary-color">Selecione sua área de experiência</label>
-                    <input class="form-control" type="text" list="datalistOptions" id="job-form" placeholder="Selecione sua área de atuação"
-                    name="message" required>
-                    <datalist id="datalistOptions">
-                        <option value="Arquitetura">
-                        <option value="Criação de projetos 3D">
-                        <option value="Desenvolvimento Web">
-                        <option value="Tecnologia da Informação">
-                        <option value="Vendas">
-                    </datalist>
-                </div>                
-                <div class="form-group">
-                    <label class="subtitle primary-color">Conte-nos um pouco sobre sua experiência</label>
-                    <textarea class="form-control" id="experience" rows="3" placeholder="Conte-nos sobre você de forma breve" name="message" required></textarea>
+                <div class="col-10">
+                    <div class="form-group">
+                        <label class="subtitle primary-color">Nome completo</label>
+                        <input type="text" class="form-control" id="name-form" placeholder="digite seu nome" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="subtitle primary-color">Endereço de email</label>
+                        <input type="email" class="form-control" id="mail-form" placeholder="nome@exemplo.com"
+                        name="email" size="40" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="subtitle primary-color">Selecione sua área de experiência</label>
+                        <input class="form-control" type="text" list="datalistOptions" id="job-form" placeholder="Selecione sua área de atuação"
+                        name="message" required>
+                        <datalist id="datalistOptions">
+                            <option value="Arquitetura">
+                            <option value="Criação de projetos 3D">
+                            <option value="Desenvolvimento Web">
+                            <option value="Tecnologia da Informação">
+                            <option value="Vendas">
+                        </datalist>
+                    </div>                
+                    <div class="form-group">
+                        <label class="subtitle primary-color">Conte-nos um pouco sobre sua experiência</label>
+                        <textarea class="form-control" id="experience" rows="3" placeholder="Conte-nos sobre você de forma breve" name="message" required></textarea>
+                    </div>
                 </div>
                 <input type="hidden" name="redirectTo" value="https://rennanmserenza.github.io/">
                 <button class="btn btn-dark" id="form-btn" name="submit" onclick="envia_email(1)">Enviar</button>
@@ -358,10 +360,10 @@
                 <p class="subtitle secondary-color">
                     Agende com um dos nossos arquitetos uma visita em sua casa
                 </p>
-            </div>  
+            </div>
             <form action="https://api.staticforms.xyz/submit" method="post">
                 <input type="hidden" name="accessKey" value="62efc486-8941-445f-bb76-a074b48ca150">
-                <div class="col-12">
+                <div class="col-10">
                     <div class="row g-3">
                         <div class="col-md-5">
                             <div class="form-group">
@@ -384,7 +386,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row g-3">
+                    <div class="row g-4">
                         <div class="col-md" id="data">
                             <div class="form-group">
                                 <label class="subtitle primary-color">CPF</label>
@@ -404,23 +406,30 @@
                                 <input type="" name="message" class="form-control" id="cep" onkeypress="mascaraCep()" maxlength="9" placeholder="00000-000" required>
                             </div>
                         </div>
+                        <div class="col-md">
+                            <div class="form-group">
+                                <label class="subtitle primary-color">Estado</label>
+                                <input class="form-control" type="text" id="uf" placeholder="Digite o seu Estado"
+                                name="message" required>
+                            </div>
+                        </div>
                     </div>
                     <div class="row g-3">
-                        <div class="col-md">
+                        <div class="col-md-5">
                             <div class="form-group">
                                 <label class="subtitle primary-color">Logradouro</label>
                                 <input class="form-control" type="text" id="endereco" placeholder="Rua/Avenida/Travessa"
                                 name="message" required>
                             </div>
                         </div>
-                        <div class="col-md">
+                        <div class="col-md-2">
                             <div class="form-group">
                                 <label class="subtitle primary-color">Número</label>
                                 <input class="form-control" type="text" id="numero-form" placeholder="Nº"
                                 name="message" required>
                             </div>
                         </div>
-                        <div class="col-md">
+                        <div class="col-md-5">
                             <div class="form-group">
                                 <label class="subtitle primary-color">Complemento</label>
                                 <input class="form-control" type="text" id="complement-cliente" placeholder="Complemento"
@@ -428,7 +437,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row g-3">
+                    <div class="row g-2">
                         <div class="col-md">
                             <div class="form-group">
                                 <label class="subtitle primary-color">Bairro</label>
@@ -443,17 +452,12 @@
                                 name="message" required>
                             </div>
                         </div>
-                        <div class="col-md">
-                            <div class="form-group">
-                                <label class="subtitle primary-color">Estado</label>
-                                <input class="form-control" type="text" id="uf" placeholder="Digite o seu Estado"
-                                name="message" required>
-                            </div>
-                        </div>
                     </div>
-                    <div class="form-group">
-                        <label class="subtitle primary-color">Deixe-nos uma mensagem</label>
-                        <textarea class="form-control" id="experience" rows="3" placeholder="O que gostaria de nos dizer?" name="message"></textarea>
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label class="subtitle primary-color">Deixe-nos uma mensagem</label>
+                            <textarea class="form-control" id="experience" rows="3" placeholder="O que gostaria de nos dizer?" name="message"></textarea>
+                        </div>
                     </div>
                 </div>
                 <input type="hidden" name="redirectTo" value="https://rennanmserenza.github.io/">
