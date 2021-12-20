@@ -154,11 +154,13 @@
 }
 
 /* FORMULÁRIO */
-#form-container {
+#form-container,
+#form-container-2 {
     margin-bottom: 4em;
 }
 
 .form-group {
+    font-size: 1em;
     margin-bottom: 0.5em;
 }
 
@@ -168,7 +170,13 @@ textarea {
 }
 
 #form-btn {
-    font-size: 20px;
+    width: 90px;
+}
+
+@media(min-width: 768px) {
+    .form-group {
+        font-size: 1.5em;
+    }
 }
 
 /* DESTAQUES */

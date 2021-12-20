@@ -69,6 +69,9 @@
                         <a href="#featured-container" class="nav-link primary-color">Imóveis</a>
                     </li>
                     <li class="nav-item">
+                        <a href="#form-container2" class="nav-link primary-color">Agende uma Visita</a>
+                    </li>
+                    <li class="nav-item">
                         <a href="#footer" class="nav-link primary-color">Contatos</a>
                     </li>
                 </ul>
@@ -189,11 +192,11 @@
                 <div class="form-group">
                     <label class="subtitle primary-color">Endereço de email</label>
                     <input type="email" class="form-control" id="mail-form" placeholder="nome@exemplo.com"
-                    name="email" required>
+                    name="email" size="40" required>
                 </div>
                 <div class="form-group">
                     <label class="subtitle primary-color">Selecione sua área de experiência</label>
-                    <input class="form-control" type="text" list="datalistOptions" id="exampleDataList" placeholder="Selecione sua área de atuação"
+                    <input class="form-control" type="text" list="datalistOptions" id="job-form" placeholder="Selecione sua área de atuação"
                     name="message" required>
                     <datalist id="datalistOptions">
                         <option value="Arquitetura">
@@ -207,8 +210,8 @@
                     <label class="subtitle primary-color">Conte-nos um pouco sobre sua experiência</label>
                     <textarea class="form-control" id="experience" rows="3" placeholder="Conte-nos sobre você de forma breve" name="message" required></textarea>
                 </div>
-                <input type="hidden" name="redirectTo" value="https://rennanmserenza.github.io/">
-                <button type="submit" class="btn btn-dark" id="form-btn" name="submit" onclick="envia_email()">Enviar</button>
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/">
+                <input type="submit" class="btn btn-dark" id="form-btn" name="submit" value="Enviar" onclick="envia_email()">
             </form>
         </div>
 
@@ -345,6 +348,48 @@
             </div>
         </div>
 
+        <!-- FOMULÁRIO 2 -->
+        <div class="container" id="form-container-2">
+            <div class="col-12">
+                <h2 class="title primary-color">
+                    Agende uma visita
+                </h2>
+                <p class="subtitle secondary-color">
+                    Venha fazer parte do nosso grupo
+                </p>
+            </div>  
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <input type="hidden" name="accessKey" value="62efc486-8941-445f-bb76-a074b48ca150">
+                <div class="form-group">
+                    <label class="subtitle primary-color">Nome completo</label>
+                    <input type="text" class="form-control" id="name-form" placeholder="digite seu nome" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label class="subtitle primary-color">Endereço de email</label>
+                    <input type="email" class="form-control" id="mail-form" placeholder="nome@exemplo.com"
+                    name="email" size="40" required>
+                </div>
+                <div class="form-group">
+                    <label class="subtitle primary-color">Selecione sua área de experiência</label>
+                    <input class="form-control" type="text" list="datalistOptions" id="job-form" placeholder="Selecione sua área de atuação"
+                    name="message" required>
+                    <datalist id="datalistOptions">
+                        <option value="Arquitetura">
+                        <option value="Criação de projetos 3D">
+                        <option value="Desenvolvimento Web">
+                        <option value="Tecnologia da Informação">
+                        <option value="Vendas">
+                    </datalist>
+                </div>                
+                <div class="form-group">
+                    <label class="subtitle primary-color">Conte-nos um pouco sobre sua experiência</label>
+                    <textarea class="form-control" id="experience" rows="3" placeholder="Conte-nos sobre você de forma breve" name="message" required></textarea>
+                </div>
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/">
+                <input type="submit" class="btn btn-dark" id="form-btn" name="submit" value="Enviar" onclick="envia_email()">
+            </form>
+        </div>
+
         <!-- FOOTER -->
         <div class="container-fluid bg-dark-color" id="footer">
             <div class="container">
@@ -363,42 +408,40 @@
                     </div>
                     <!-- FOOTER DETAILS -->
                     <div class="col-12" id="footer-details">
-                        <div class="col-12" id="footer-details">
-                            <div class="row">
-                                <div class="col-12 col-md-4" id="news-container">
-                                    <h4>Fique por dentro das novidades</h4>
-                                    <p class="secondary-color">Inscreva-se para saber em primeira mão</p>
-                                    <form>
-                                        <div class="mb-3">
-                                            <input type="email" class="form-control"
-                                            placeholder="Digite seu e-mail">
-                                        </div>
-                                        <button class="btn btn-dark"
-                                        type="submit">Inscrever</button>
-                                    </form>
-                                </div>
-                                <div class="col-12 col-md-4" id="contact-container">
-                                    <h4>Formas de contato</h4>
-                                    <p class="secondary-color">(67) 99999-9999</p>
-                                    <p class="secondary-color">contato@imovi.com</p>
-                                </div>
-                                <div class="col-12 col-md-4" id="links-container">
-                                    <div class="row">
-                                        <h4>Você pode estar procurando por:</h4>
-                                        <div class="col-6">
-                                            <ul class="list-unstyled">
-                                                <li><a href="#" class="secondary-color">Projetos</a></li>
-                                                <li><a href="#" class="secondary-color">Imóveis</a></li>
-                                                <li><a href="#" class="secondary-color">Vendas</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-6">
-                                            <ul class="list-unstyled">
-                                                <li><a href="#" class="secondary-color">Contratar</a></li>
-                                                <li><a href="#" class="secondary-color">Trabalhar Conosco</a></li>
-                                                <li><a href="#" class="secondary-color">Contato</a></li>
-                                            </ul>
-                                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-4" id="news-container">
+                                <h4>Fique por dentro das novidades</h4>
+                                <p class="secondary-color">Inscreva-se para saber em primeira mão</p>
+                                <form>
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control"
+                                        placeholder="Digite seu e-mail">
+                                    </div>
+                                    <button class="btn btn-dark"
+                                    type="submit">Inscrever</button>
+                                </form>
+                            </div>
+                            <div class="col-12 col-md-4" id="contact-container">
+                                <h4>Formas de contato</h4>
+                                <p class="secondary-color">(67) 99999-9999</p>
+                                <p class="secondary-color">contato@imovi.com</p>
+                            </div>
+                            <div class="col-12 col-md-4" id="links-container">
+                                <div class="row">
+                                    <h4>Você pode estar procurando por:</h4>
+                                    <div class="col-6">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#" class="secondary-color">Projetos</a></li>
+                                            <li><a href="#" class="secondary-color">Imóveis</a></li>
+                                            <li><a href="#" class="secondary-color">Vendas</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#" class="secondary-color">Contratar</a></li>
+                                            <li><a href="#" class="secondary-color">Trabalhar Conosco</a></li>
+                                            <li><a href="#" class="secondary-color">Contato</a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -427,11 +470,6 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"
         ></script>
-
-        <script>
-            function envia_email(){
-               alert('Email enviado com sucesso');
-            }
-        </script>
+        <script src="main.js"></script>
     </body>
 </html>
