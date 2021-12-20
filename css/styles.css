@@ -266,6 +266,17 @@ textarea {
     }
 }
 
+/* FORMULÁRIO 2 */
+.col-md {
+    margin-top: 0px;
+}
+
+#form-container-2 .row.g-2,
+#form-container-2 .row.g-3,
+#form-container-2 .row.g-4 {
+    margin-top: 0.2em;
+}
+
 /* FOOTER */
 #footer {
     padding: 3em 2em;
